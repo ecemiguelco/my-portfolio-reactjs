@@ -40,9 +40,15 @@ function Footer() {
           <LinkedInIcon />
         </NavLink>
       </div>
-      <div>
+      <NavLink
+        className="resumeDlBtn"
+        to="https://drive.google.com/file/d/1oSJQuMAi8uiYOy6tg1nhseO0qHBv-_F2/view?usp=sharing"
+        rel=" noopener noreferrer"
+        target="_blank"
+        download
+      >
         <DownloadIcon /> Resume
-      </div>
+      </NavLink>
       <p>&copy; 2023 Miguel Lorenzo Co</p>
     </div>
   );
