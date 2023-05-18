@@ -3,6 +3,8 @@ import { useParams, NavLink } from "react-router-dom";
 import { projectList } from "../helpers/ProjectList";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/ProjectDisplay.css";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -21,9 +23,20 @@ function ProjectDisplay() {
       >
         <img src={project.image} />
       </NavLink>
-      <p>
-        <strong>Skills:</strong> {project.skills}
-      </p>
+      <div className="projectSkills">
+        <strong>Skills:</strong>{" "}
+        {project.skills.map((ski) => {
+          return (
+            <Stack
+              direction="row"
+              spacing={1}
+              className="skillTabs"
+            >
+              <Chip label={`${ski}`} />
+            </Stack>
+          );
+        })}
+      </div>
       <NavLink
         to={project.github}
         rel=" noopener noreferrer"
