@@ -14,11 +14,21 @@ function ProjectDisplay() {
   return (
     <div className="project">
       <h1>{project.name}</h1>
-      <img src={project.image} />
+      <NavLink
+        to={project.deploy}
+        rel=" noopener noreferrer"
+        target="_blank"
+      >
+        <img src={project.image} />
+      </NavLink>
       <p>
         <strong>Skills:</strong> {project.skills}
       </p>
-      <NavLink to={project.github}>
+      <NavLink
+        to={project.github}
+        rel=" noopener noreferrer"
+        target="_blank"
+      >
         <GitHubIcon />
       </NavLink>
     </div>
