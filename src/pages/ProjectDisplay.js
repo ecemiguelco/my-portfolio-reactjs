@@ -1,6 +1,5 @@
 import React from "react";
-
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import { projectList } from "../helpers/ProjectList";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/ProjectDisplay.css";
@@ -19,7 +18,9 @@ function ProjectDisplay() {
       <p>
         <strong>Skills:</strong> {project.skills}
       </p>
-      <GitHubIcon />
+      <NavLink to={project.github}>
+        <GitHubIcon />
+      </NavLink>
     </div>
   );
 }
