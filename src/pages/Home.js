@@ -19,7 +19,7 @@ function Home() {
         <h2>Miguel Lorenzo Co</h2>
         <div className="prompt">
           <p>
-            I'm an aspiring software engineer that specializes on web development. Focused on buidling accessible,
+            I'm an aspiring software engineer that specializes on web development. Focused on building accessible,
             user-friendly, and creative websites.
           </p>
           <NavLink
