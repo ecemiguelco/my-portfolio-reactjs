@@ -11,6 +11,8 @@ export const projectList = [
     skills: ["JavaScript", "CSS", "React.js", "Chart.js", "Node.js", "Express.js", "MonogDB"],
     github: "https://github.com/ecemiguelco/p5-budgetly",
     deploy: "https://budgetmesoftly-v1.onrender.com/",
+    description:
+      "BudgetMeSoftly is a Bootcamp Project. Mainly this is a financial tracker app wherein the user can add specific budget accounts and respective transactions. This is under development to add more data analytic widgets and other budgeting functionalities.",
   },
   {
     name: "Codegram",
