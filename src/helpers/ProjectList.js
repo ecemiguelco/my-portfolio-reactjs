@@ -12,7 +12,7 @@ export const projectList = [
     github: "https://github.com/ecemiguelco/p5-budgetly",
     deploy: "https://budgetmesoftly-v1.onrender.com/",
     description:
-      "BudgetMeSoftly is a Bootcamp Project. Mainly this is a financial tracker app wherein the user can add specific budget accounts and respective transactions. This is under development to add more data analytic widgets and other budgeting functionalities.",
+      "BudgetMeSoftly is a Bootcamp project. Mainly this is a financial tracker app wherein the user can add specific budget accounts and respective transactions. This is under development; to add more data analytics widgets and other budgeting functionalities.",
   },
   {
     name: "Codegram",
@@ -20,6 +20,8 @@ export const projectList = [
     skills: ["Javascript", "CSS", "React.js", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/ecemiguelco/codegram",
     deploy: "https://codegram-v1.onrender.com/",
+    description:
+      "Codegram is a Bootcamp project. A demo social media app that's focused on Software Development Content",
   },
   {
     name: "MiggyBird",
@@ -27,6 +29,8 @@ export const projectList = [
     skills: ["Javascript", "CSS", "HTML"],
     github: "https://github.com/ecemiguelco/MiggyBird",
     deploy: "https://ecemiguelco.github.io/MiggyBird/",
+    description:
+      "A Bootcamp project. Made as a demo of learnings from Javascript discussion. An attempt to clone the once hit game Flappy Bird",
   },
   {
     name: "Digital Clock",
@@ -34,6 +38,7 @@ export const projectList = [
     skills: ["Javascript", "CSS", "HTML"],
     github: "https://github.com/ecemiguelco/digital-clock",
     deploy: "https://ecemiguelco.github.io/digital-clock/",
+    description: "A Bootcamp project. Made as a demo for creating dynamic webpage using HTML, CSS, and Javascript.",
   },
   {
     name: "Interactive Webpage About Me",
@@ -41,5 +46,6 @@ export const projectList = [
     skills: ["CSS", "Bootstrap", "HTML"],
     github: "https://github.com/ecemiguelco/Interactive-Webpage-About-Me",
     deploy: "https://ecemiguelco.github.io/Interactive-Webpage-About-Me/",
+    description: "One of my first attempts at creating a webpage using HTML, CSS, and Bootstrap",
   },
 ];

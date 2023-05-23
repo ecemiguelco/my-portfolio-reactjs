@@ -9,13 +9,10 @@ import Stack from "@mui/material/Stack";
 function ProjectDisplay() {
   const { id } = useParams();
   const project = projectList[id];
-  console.log(id);
-  console.log(projectList);
-  console.log(project);
 
   return (
     <div className="project">
-      <div>
+      <div className="projNameAndRepo">
         <h1>{project.name}</h1>
         <NavLink
           to={project.github}
@@ -25,6 +22,7 @@ function ProjectDisplay() {
           <GitHubIcon />
         </NavLink>
       </div>
+      <div className="projDescription">{project.description}</div>
 
       <NavLink
         to={project.deploy}
@@ -34,7 +32,7 @@ function ProjectDisplay() {
         <img src={project.image} />
       </NavLink>
       <div className="projectSkills">
-        <strong>Skills:</strong>
+        <strong>Technologies:</strong>
         {project.skills.map((ski) => {
           return (
             <Stack
