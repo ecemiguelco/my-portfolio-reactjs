@@ -4,22 +4,41 @@ import "../styles/Home.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
+import Zoom from "@mui/material/Zoom";
 import myImg from "../assets/IMG_5610_crop.JPG";
 
 function Home() {
+  const LightTooltip = styled(({ className, ...props }) => (
+    <Tooltip
+      {...props}
+      classes={{ popper: className }}
+    />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: theme.palette.common.white,
+      color: "rgba(0, 0, 0, 0.87)",
+      boxShadow: theme.shadows[1],
+      fontSize: 14,
+    },
+    [`& .${tooltipClasses.arrow}`]: {
+      color: theme.palette.common.white,
+    },
+  }));
+
   return (
     <main className="home">
       <section className="about">
         <img
           className="myImage"
           src={myImg}
-          alt="my-image"
-          width="180px"
+          alt="my-profpic"
         ></img>
-        <h2>Miguel Lorenzo Co</h2>
+        <h2 className="aboutName">Miguel Lorenzo Co</h2>
         <div className="prompt">
-          <p>
-            I'm an aspiring software engineer that specializes on web development. Focused on building accessible,
+          <p className="aboutDescrip">
+            I'm a software engineer that specializes on full-stack web development. Focused on building accessible,
             user-friendly, and creative websites.
           </p>
           <NavLink
@@ -38,7 +57,7 @@ function Home() {
           </NavLink>
           <NavLink
             to="https://github.com/ecemiguelco"
-            el=" noopener noreferrer"
+            rel=" noopener noreferrer"
             target="_blank"
           >
             <GitHubIcon />
@@ -49,68 +68,114 @@ function Home() {
       <section className="skills">
         <div className="stylerBG">
           <h1>Skills</h1>
-          <ol className="list">
-            <li className="item">
-              <h2>Frontend</h2>
-              <span className="skillsCtn">
-                <div class="skill-item">
-                  HTML
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/32/1051/1051277.png"
-                    alt="HTML Logo"
-                  />
-                </div>
-                <div class="skill-item">
-                  CSS
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/32/732/732190.png"
-                    alt="CSS Logo"
-                  />
-                </div>
-                <div class="skill-item">
-                  Javascript
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/32/1199/1199124.png"
-                    alt="Javascript Logo"
-                  />
-                </div>
-                <div class="skill-item">
-                  ReactJS
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/32/1183/1183672.png"
-                    alt="Reactjs Logo"
-                  />
-                </div>
-                <div class="skill-item">
-                  ChartJS
-                  <img
-                    className="charjsIcon"
-                    src="https://www.chartjs.org/docs/latest/favicon.ico"
-                    alt="Chartjs Logo"
-                  />
-                </div>
-              </span>
-            </li>
-            <li className="item">
-              <h2>Backend</h2>
-              <span className="skillsCtn">
-                <div class="skill-item">
-                  NodeJS
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/32/919/919825.png"
-                    alt="Nodejs Logo"
-                  />
-                </div>
-                <div class="skill-item">
-                  MongoDB
-                  <img
-                    src="https://img.icons8.com/?size=32&id=iFoT5Ds3iK1c&format=png"
-                    alt="MongoDB Logo"
-                  />
-                </div>
-              </span>
-            </li>
-          </ol>
+
+          <div className="skillsContainer">
+            <LightTooltip
+              title="HTML"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/html.png"
+                alt="html-logo"
+              ></img>
+            </LightTooltip>
+            <LightTooltip
+              title="CSS"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/css.png"
+                alt="css-logo"
+              ></img>
+            </LightTooltip>
+            <LightTooltip
+              title="Javascipt"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/java-script.png"
+                alt="js-logo"
+              ></img>
+            </LightTooltip>
+          </div>
+          <div className="skillsContainer">
+            <LightTooltip
+              title="Bootstrap"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/bootstrap.png"
+                alt="bootstrap-logo"
+              ></img>
+            </LightTooltip>
+            <LightTooltip
+              title="Material UI"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/muiicon.png"
+                alt="mui-logo"
+              ></img>
+            </LightTooltip>
+          </div>
+          <div className="skillsContainer">
+            <LightTooltip
+              title="React.Js"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/react.png"
+                alt="react-logo"
+              ></img>
+            </LightTooltip>
+            <LightTooltip
+              title="Node.Js"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/nodejs.png"
+                alt="nodejs-logo"
+              ></img>
+            </LightTooltip>
+            <LightTooltip
+              title="MongoDB"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/mongodb.png"
+                alt="mongodb-logo"
+              ></img>
+            </LightTooltip>
+          </div>
+          <div className="skillsContainer">
+            <LightTooltip
+              title="Git"
+              placement="top"
+              TransitionComponent={Zoom}
+              arrow
+            >
+              <img
+                src="./assets/gitcontrol.png"
+                alt="git-logo"
+              ></img>
+            </LightTooltip>
+          </div>
         </div>
       </section>
     </main>
