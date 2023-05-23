@@ -25,6 +25,7 @@ function ProjectDisplay() {
       <div className="projDescription">{project.description}</div>
 
       <NavLink
+        className="projectImageHyperlink"
         to={project.deploy}
         rel=" noopener noreferrer"
         target="_blank"
