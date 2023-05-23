@@ -86,7 +86,9 @@
 
 .iconAttributions {
   font-size: 0.85rem;
+  max-width: 800px;
   color: #b5b5b5;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -96,5 +98,17 @@
 
   .resumeDlBtn svg {
     font-size: 25px;
+  }
+
+  .contactIconEmail svg {
+    font-size: 25px;
+  }
+
+  .myEmail {
+    font-size: 0.8rem;
+  }
+
+  .iconAttributions {
+    width: 90%;
   }
 }
