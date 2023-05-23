@@ -15,6 +15,7 @@ function Projects() {
               image={project.image}
               name={project.name}
               id={i}
+              key={i}
             />
           );
         })}
