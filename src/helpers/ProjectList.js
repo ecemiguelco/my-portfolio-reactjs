@@ -41,7 +41,7 @@ export const projectList = [
     description: "A Bootcamp project. Made as a demo for creating dynamic webpage using HTML, CSS, and Javascript.",
   },
   {
-    name: "Interactive Webpage About Me",
+    name: "Basic Webpage About Me",
     image: Proj5,
     skills: ["CSS", "Bootstrap", "HTML"],
     github: "https://github.com/ecemiguelco/Interactive-Webpage-About-Me",
