@@ -15,7 +15,17 @@ function ProjectDisplay() {
 
   return (
     <div className="project">
-      <h1>{project.name}</h1>
+      <div>
+        <h1>{project.name}</h1>
+        <NavLink
+          to={project.github}
+          rel=" noopener noreferrer"
+          target="_blank"
+        >
+          <GitHubIcon />
+        </NavLink>
+      </div>
+
       <NavLink
         to={project.deploy}
         rel=" noopener noreferrer"
@@ -24,7 +34,7 @@ function ProjectDisplay() {
         <img src={project.image} />
       </NavLink>
       <div className="projectSkills">
-        <strong>Skills:</strong>{" "}
+        <strong>Skills:</strong>
         {project.skills.map((ski) => {
           return (
             <Stack
@@ -37,13 +47,6 @@ function ProjectDisplay() {
           );
         })}
       </div>
-      <NavLink
-        to={project.github}
-        rel=" noopener noreferrer"
-        target="_blank"
-      >
-        <GitHubIcon />
-      </NavLink>
     </div>
   );
 }
