@@ -3,6 +3,7 @@ import Proj2 from "../assets/pro2.png";
 import Proj3 from "../assets/pro3.png";
 import Proj4 from "../assets/pro4.png";
 import Proj5 from "../assets/pro5.png";
+import Proj6 from "../assets/pro6.png";
 
 export const projectList = [
   {
