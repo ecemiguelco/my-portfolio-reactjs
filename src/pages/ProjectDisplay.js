@@ -16,7 +16,7 @@ function ProjectDisplay() {
         <h1>{project.name}</h1>
         <NavLink
           to={project.github}
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
         >
           <GitHubIcon />
@@ -27,7 +27,7 @@ function ProjectDisplay() {
       <NavLink
         className="projectImageHyperlink"
         to={project.deploy}
-        rel=" noopener noreferrer"
+        rel="noreferrer"
         target="_blank"
       >
         <img src={project.image} />

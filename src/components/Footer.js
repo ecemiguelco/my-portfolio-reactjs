@@ -14,28 +14,28 @@ function Footer() {
       <div className="socialMedia">
         <NavLink
           to="https://www.instagram.com/miguelcoooo/"
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
         >
           <InstagramIcon />
         </NavLink>
         <NavLink
           to="https://twitter.com/SuperMiiguel"
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
         >
           <TwitterIcon />
         </NavLink>
         <NavLink
           to="https://www.facebook.com/miguelcoooo"
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
         >
           <FacebookIcon />
         </NavLink>
         <NavLink
           to="https://www.linkedin.com/in/miguel-lorenzo-co/"
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
         >
           <LinkedInIcon />
@@ -46,7 +46,7 @@ function Footer() {
         <NavLink
           className="resumeDlBtn"
           to="https://drive.google.com/file/d/1wpVop5fU2gB8Det265V0AepBiML14Es2/view?usp=sharing"
-          rel=" noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
           download
         >
