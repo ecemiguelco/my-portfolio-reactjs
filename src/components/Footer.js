@@ -45,7 +45,7 @@ function Footer() {
       <div className="contactAndResume">
         <NavLink
           className="resumeDlBtn"
-          to="https://drive.google.com/file/d/1wpVop5fU2gB8Det265V0AepBiML14Es2/view?usp=sharing"
+          to="https://drive.google.com/file/d/1vTc02Rr_HpJlC8ZEqayLAifSfJfthEp4/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
           download
@@ -62,6 +62,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/v8RpPQUwv0N8/html-5"
+          rel="noreferrer"
         >
           HTML
         </a>
@@ -69,6 +70,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/7gdY5qNXaKC0/css3"
+          rel="noreferrer"
         >
           CSS
         </a>
@@ -76,6 +78,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/PXTY4q2Sq2lG/javascript"
+          rel="noreferrer"
         >
           JavaScript
         </a>{" "}
@@ -83,6 +86,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/84710/bootstrap"
+          rel="noreferrer"
         >
           Bootstrap
         </a>
@@ -90,6 +94,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/gFw7X5Tbl3ss/material-ui"
+          rel="noreferrer"
         >
           Material UI
         </a>
@@ -97,6 +102,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/NfbyHexzVEDk/react"
+          rel="noreferrer"
         >
           React
         </a>
@@ -104,6 +110,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/54087/nodejs"
+          rel="noreferrer"
         >
           Nodejs
         </a>
@@ -111,6 +118,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icons/set/mongodb"
+          rel="noreferrer"
         >
           MongoDB
         </a>
@@ -118,6 +126,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com/icon/20906/git"
+          rel="noreferrer"
         >
           Git
         </a>{" "}
@@ -125,6 +134,7 @@ function Footer() {
         <a
           target="_blank"
           href="https://icons8.com"
+          rel="noreferrer"
         >
           Icons8
         </a>
