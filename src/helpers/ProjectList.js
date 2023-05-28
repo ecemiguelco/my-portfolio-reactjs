@@ -8,7 +8,7 @@ export const projectList = [
   {
     name: "BudgetMeSoftly",
     image: Proj1,
-    skills: ["JavaScript", "CSS", "React.js", "Chart.js", "Node.js", "Express.js", "MonogDB"],
+    skills: ["JavaScript", "CSS", "React.js", "Chart.js", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/ecemiguelco/p5-budgetly",
     deploy: "https://budgetmesoftly-v1.onrender.com/",
     description:
@@ -22,6 +22,15 @@ export const projectList = [
     deploy: "https://codegram-v1.onrender.com/",
     description:
       "Codegram is a Bootcamp project. A demo social media app that's focused on Software Development Content",
+  },
+  {
+    name: "My Pokedex",
+    image: Proj6,
+    skills: ["Javascript", "CSS", "React.js"],
+    github: "https://github.com/ecemiguelco/my-pokedex",
+    deploy: "https://my-simple-pokedex-project.onrender.com/",
+    description:
+      "A frontend bootcamp project. Aims to demo skills learned from React discussion within the bootcamp. Consumes the pokeapi v2 to display pokemons, 20 pokemons at a time starting from dex no. 1, and can also filter pokemons by type.",
   },
   {
     name: "MiggyBird",

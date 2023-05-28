@@ -45,7 +45,7 @@ function Footer() {
       <div className="contactAndResume">
         <NavLink
           className="resumeDlBtn"
-          to="https://drive.google.com/file/d/1oSJQuMAi8uiYOy6tg1nhseO0qHBv-_F2/view?usp=sharing"
+          to="https://drive.google.com/file/d/1wpVop5fU2gB8Det265V0AepBiML14Es2/view?usp=sharing"
           rel=" noopener noreferrer"
           target="_blank"
           download
